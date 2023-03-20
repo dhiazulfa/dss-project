@@ -13,11 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kpis', function (Blueprint $table) {
+        Schema::create('developers_kpi', function (Blueprint $table) {
             $table->id();
-            $table->string('kpi_name');
-            $table->decimal('bobot',10,2);
-            $table->decimal('target_min',10,2);
+            $table->foreignId('developer_id');
+            $table->foreignId('kpi_id');
+            $table->date('tgl_penilaian');
+            $table->decimal('realisasi',10,2);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kpis');
+        Schema::dropIfExists('developers_kpi');
     }
 };

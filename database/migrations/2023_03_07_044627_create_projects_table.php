@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->date('kick_off');
             $table->date('end_project');
+            $table->enum('status', ['running','closed']);
             $table->timestamps();
         });
     }
