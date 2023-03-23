@@ -9,6 +9,8 @@ class KeyResult extends Model
 {
     use HasFactory;
 
+    protected $table = 'key_results';
+
     protected $guarded = ['id'];
 
     protected $with = ['objective'];
@@ -16,6 +18,14 @@ class KeyResult extends Model
     protected $fillable = [
         'objective_id',
         'title',
-        'description'
+        'description',
+        'target',
+        'actual',
+        'progress'
     ];
+
+    public function objective()
+    {
+        return $this->belongsTo(Objective::class);
+    }
 }
