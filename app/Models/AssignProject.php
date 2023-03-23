@@ -11,7 +11,6 @@ class AssignProject extends Model
 
     protected $table = 'assign_projects';
 
-    protected $guarded = ['id'];
     protected $with = ['project', 'developer'];
 
     protected $fillable = [

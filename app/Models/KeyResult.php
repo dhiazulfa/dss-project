@@ -11,8 +11,6 @@ class KeyResult extends Model
 
     protected $table = 'key_results';
 
-    protected $guarded = ['id'];
-
     protected $with = ['objective'];
     
     protected $fillable = [
