@@ -10,24 +10,14 @@
       <form method="POST" action="/admin/tasks" class="mb-5" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
-          <label for="title" class="form-label">Title</label>
-          <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" value="{{old('title')}}" required>
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama" value="{{old('nama')}}" required>
           @error('title')
             <div class="invalid-feedback">
               {{$message}}
             </div>
           @enderror
-        </div>
-    
-        <div class="mb-3">
-            <label for="slug" class="form-label">Slug</label>
-            <input type="text" class="form-control @error('slug') is-invalid @enderror" id="slug" name="slug" value="{{old('slug')}}" required>
-            @error('slug')
-              <div class="invalid-feedback">
-                {{$message}}
-              </div>
-            @enderror
-        </div>
+					</div>
      
         <div class="mb-3 col-lg-4">
           <label for="jumlah_kebutuhan" class="form-label">Jumlah Kebutuhan Pekerja</label>
@@ -59,22 +49,23 @@
           @enderror
         </div>
     
-        <label for="jk_pekerja" class="form-label">Jenis Kelamin Pekerja yang dibutuhkan</label>
-        <select class="form-control @error('jk_pekerja') is-invalid @enderror" name="jk_pekerja" required>
+        <label for="position" class="form-label">Position</label>
+        <select class="form-control @error('position') is-invalid @enderror" name="position" required>
           <option value="">Pilih Salah Satu</option>
-          <option value="pria">Pria</option>
-          <option value="wanita">Wanita</option>
-          <option value="semua">Pria/Wanita</option>
+          <option value="backend">Backend</option>
+          <option value="frontend">Frontend</option>
+          <option value="fullstack">Fullstack</option>
+          <option value="QA">QA</option>
+          <option value="UI/UX">UI/UX</option>
           </select>
         </div>
     
         <div class="mb-3 col-lg-4">
-            <label for="waktu_pekerjaan" class="form-label">Waktu Pekerjaan</label>
-            <select class="form-control @error('waktu_pekerjaan') is-invalid @enderror" name="waktu_pekerjaan" required>
+            <label for="status" class="form-label">Status</label>
+            <select class="form-control @error('status') is-invalid @enderror" name="status" required>
               <option value="">Pilih Salah Satu</option>
-              <option value="harian">Harian</option>
-              <option value="mingguan">Mingguan</option>
-              <option value="bulanan">Bulanan</option>
+              <option value="In House">On Site</option>
+              <option value="Freelance">Freelance</option>
             </select>
         </div>
     
