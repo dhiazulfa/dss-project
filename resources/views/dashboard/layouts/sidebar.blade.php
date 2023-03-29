@@ -10,26 +10,32 @@
             <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
           </svg> Dashboard</a>
       </li>
-
-      <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+      
+      <li class="nav-item"><a class="nav-link" href="/dashboard/developers">
+          <svg class="nav-icon">
+            <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-code"></use>
+          </svg> Developers</a>
+      </li>
+      
+      {{-- <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
         <svg class="nav-icon">
           <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-code"></use>
         </svg>Developers</a>
-      <ul class="nav-group-items">
-        <li class="nav-item"><a class="nav-link" href="/dashboard/pekerja">
-          <svg class="nav-icon">
-            <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-people"></use>
-          </svg> In House </a>
-      </li>
+        <ul class="nav-group-items">
+          <li class="nav-item"><a class="nav-link" href="/dashboard/developers">
+              <svg class="nav-icon">
+                <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-people"></use>
+              </svg> In House </a>
+          </li>
 
-      <li class="nav-item"><a class="nav-link" href="/dashboard/clients">
-        <svg class="nav-icon">
-          <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-user"></use>
-        </svg> Freelance </a>
-      </li>
+          <li class="nav-item"><a class="nav-link" href="/dashboard/developers">
+            <svg class="nav-icon">
+              <use xlink:href="/vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+            </svg> Freelance </a>
+          </li>
 
         </ul>
-      </li>
+      </li> --}}
 
       <li class="nav-item"><a class="nav-link" href="/dashboard/done-task">
         <svg class="nav-icon">

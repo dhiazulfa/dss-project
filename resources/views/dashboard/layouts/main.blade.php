@@ -64,7 +64,7 @@
           @yield('container')
     </div>
     <footer class="footer">
-      <div class="ms-auto"><a href="#">DailyWorker</a> © 2023</div>
+      <div class="ms-auto"><a href="#">key8ice</a> © 2023</div>
       <!-- <div class="ms-auto">Powered by&nbsp;<a href="http://omah-ti.id/">Omah Technology Indonesia</a></div> -->
     </footer>
 

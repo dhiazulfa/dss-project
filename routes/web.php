@@ -4,6 +4,8 @@ use App\Models\User;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminDeveloperController;
+
 
 
 /*
@@ -31,3 +33,6 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/dashboard', function(){
     return view('dashboard.index');
   })->middleware('auth');
+
+//Route Developer CRUD
+Route::resource('/dashboard/developers', AdminDeveloperController::class)->middleware('auth');
